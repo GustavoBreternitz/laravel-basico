@@ -12,5 +12,5 @@
 */
 
 Route::prefix('adm')->group(function() {
-    Route::get('/', 'AdmController@index');
+    Route::get('/teste', 'AdmController@index')->name('teste')->middleware('auth');
 });
